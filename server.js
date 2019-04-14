@@ -22,7 +22,7 @@ const config = require('./config');
 // db.loadDatabase();
 
 // load up mongoose
-mongoose.connect(config.MONGODB_URL, {useNewUrlParser: true});
+mongoose.connect(config.MONGODB_URI, {useNewUrlParser: true});
 const Schema = mongoose.Schema;
 // const HelloSchema = new Schema({message:String});
 // const HelloModel = mongoose.model('Hello', HelloSchema)
