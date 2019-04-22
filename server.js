@@ -28,7 +28,20 @@ const Schema = mongoose.Schema;
 // const HelloModel = mongoose.model('Hello', HelloSchema)
 const workSchema = new Schema({
     task:String,
-    project:String
+    project:String,
+    place: String, 
+    goal: String,
+    location: String,
+    weather: String,
+    sound: String,
+    timeStart: String,
+    goalCompletion: String,
+    excitement: String,
+    tags:{
+        type: Array,
+        default: []
+    },
+    timeEnd: String
 });
 
 const HelloModel = mongoose.model('work', workSchema);
