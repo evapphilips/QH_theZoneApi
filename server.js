@@ -34,14 +34,14 @@ const workSchema = new Schema({
     location: String,
     weather: String,
     sound: String,
-    timeStart: String,
+    timeStart: Date,
     goalCompletion: String,
     excitement: String,
     tags:{
         type: Array,
         default: []
     },
-    timeEnd: String
+    timeEnd: Date
 });
 
 const HelloModel = mongoose.model('work', workSchema);
