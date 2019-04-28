@@ -36,7 +36,7 @@ const workSchema = new Schema({
         default: []
     },
     weather: String,
-    sound: Double,
+    sound: String,
     timeStart: Date,
     goalCompletion: String,
     excitement: String,
