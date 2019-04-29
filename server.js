@@ -35,7 +35,10 @@ const workSchema = new Schema({
         type: Array,
         default: []
     },
-    weather: String,
+    weather:{
+        type: Array,
+        default: []
+    },
     sound: String,
     timeStart: Date,
     goalCompletion: String,
